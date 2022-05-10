@@ -1,5 +1,5 @@
 <?php
-    // ...
+    //..
 ?>
 
 <!DOCTYPE html>
@@ -19,13 +19,15 @@
         <div class="container py-3">
 
             <?php
+            
 
             if (isset($_GET['password'])) {
+                require 'functions/steeven.php';
 
                 $password = $_GET['password'];
 
                 // I use my personal function with my namespace
-                // ...
+                checkPassword($password);
 
             }
             else {
