@@ -4,7 +4,7 @@ namespace steeven;
 
 function checkPassword($password) {
     echo '<h1 class="text-center">Steeven</h1>';
-    echo 'Mot de passe : ' . $password;<br>
+    echo 'Mot de passe : ' . $password;
     $completion=0;
     $uppercase = preg_match('@[A-Z]@', $password);
     $lowercase = preg_match('@[a-z]@', $password);
