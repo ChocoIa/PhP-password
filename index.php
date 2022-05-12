@@ -1,5 +1,5 @@
 <?php
-    //..
+    include_once 'functions/steeven.php';
 ?>
 
 <!DOCTYPE html>
@@ -22,12 +22,11 @@
             
 
             if (isset($_GET['password'])) {
-                require 'functions/steeven.php';
 
                 $password = $_GET['password'];
 
                 // I use my personal function with my namespace
-                checkPassword($password);
+                steeven\checkPassword($password);
 
             }
             else {
