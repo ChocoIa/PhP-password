@@ -55,16 +55,18 @@ function checkPassword($password) {
     }elseif($completion==4){
         $couleur='';
     }
-    echo '
+    echo '<br>
     <div class="progress">
     <div class="progress-bar progress-bar-striped progress-bar-animated bg-' . $couleur . '" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: '. $completion*20 .'%"></div>
   ';
 }else{
-    echo'<h1 class="text-center">Mot de passe valide</h1> <br>';
     echo '
-    <div class="progress">
+    <br><div class="progress">
     <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div>
-  ';
+  <br>';
+  echo '<button type="button" class="btn btn-success">Success</button>';
+
+
  }
     
     }
