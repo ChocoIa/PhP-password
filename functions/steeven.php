@@ -4,7 +4,7 @@ namespace steeven;
 
 function checkPassword($password) {
     echo '<h1 class="text-center">Steeven</h1>';
-    echo 'Mot de passe : ' . $password;
+    echo 'Mot de passe : ' . $password;<br>
     $completion=0;
     $uppercase = preg_match('@[A-Z]@', $password);
     $lowercase = preg_match('@[a-z]@', $password);
@@ -63,8 +63,8 @@ function checkPassword($password) {
     echo '
     <br><div class="progress">
     <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div>
-  <br>';
-  echo '<button type="button" class="btn btn-success">Success</button>';
+    </div> <br>';
+  echo '<div class="row mx-auto mt-4" style="width: 50px"><a href="http://localhost/index.php" type="button" class="btn btn-success">OK</a></div>';
 
 
  }
